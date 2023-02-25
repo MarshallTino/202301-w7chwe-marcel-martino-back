@@ -6,7 +6,7 @@ import register from "../controllers/userController/registerController/registerC
 const userRouter = Router();
 
 const storage = multer.diskStorage({
-  destination: "userImages/",
+  destination: "src/server/userImages",
   filename(req, file, callback) {
     const separatedNameExtension = file.mimetype.split("/");
     const extension = separatedNameExtension[separatedNameExtension.length - 1];
