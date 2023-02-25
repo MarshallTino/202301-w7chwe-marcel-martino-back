@@ -8,7 +8,7 @@ export const userSchema = new Schema({
   },
   email: { type: String, required: true, unique: true },
   password: { type: String, minLength: 10, required: true },
-  image: { type: String, required: false },
+  userImage: { type: String, required: false },
   friends: Object,
   enemies: Object,
 });
