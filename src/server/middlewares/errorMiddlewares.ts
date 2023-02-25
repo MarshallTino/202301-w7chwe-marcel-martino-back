@@ -2,7 +2,7 @@ import createDebug from "debug";
 import { type NextFunction, type Request, type Response } from "express";
 import CustomError from "../customError/CustomError";
 
-const debug = createDebug("robots:middleweres");
+const debug = createDebug("users:middleweres");
 
 export const notFoundError = (
   req: Request,
