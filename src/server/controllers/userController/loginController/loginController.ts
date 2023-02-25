@@ -1,4 +1,4 @@
-import "../../../loadEnvoirements.js";
+import "../../../../loadEnv.js";
 import jwt from "jsonwebtoken";
 import { type NextFunction, type Request, type Response } from "express";
 import CustomError from "../../../customError/CustomError.js";

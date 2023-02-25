@@ -6,12 +6,12 @@ import register from "../controllers/userController/registerController/registerC
 const userRouter = Router();
 
 const storage = multer.diskStorage({
-  destination: "/userImages",
-  filename(req, file, cb) {
+  destination: "userImages/",
+  filename(req, file, callback) {
     const separatedNameExtension = file.mimetype.split("/");
     const extension = separatedNameExtension[separatedNameExtension.length - 1];
     const uniqueSuffix = Date.now();
-    cb(null, `${file.fieldname}-${uniqueSuffix}.${extension}`);
+    callback(null, `${file.fieldname}-${uniqueSuffix}.${extension}`);
   },
 });
 

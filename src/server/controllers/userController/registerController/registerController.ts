@@ -10,7 +10,7 @@ const register = async (
   next: NextFunction
 ) => {
   try {
-    const image = req.file?.filename;
+    const userImage = req.file?.filename;
 
     const { password, username, email } = req.body;
 
@@ -18,7 +18,7 @@ const register = async (
     const user = await User.create({
       username,
       password: hashedPassword,
-      image,
+      userImage,
       email,
     });
 

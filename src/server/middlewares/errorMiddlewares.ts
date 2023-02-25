@@ -1,6 +1,6 @@
 import createDebug from "debug";
 import { type NextFunction, type Request, type Response } from "express";
-import CustomError from "../customError/CustomError";
+import CustomError from "../customError/CustomError.js";
 
 const debug = createDebug("users:middleweres");
 
